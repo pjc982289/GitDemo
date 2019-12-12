@@ -1,4 +1,4 @@
-package com.pjc.decide1205;
+package com.pjc.study.decide1205;
 
 
 import org.testng.annotations.Test;
