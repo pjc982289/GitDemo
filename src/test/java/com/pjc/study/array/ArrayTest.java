@@ -1,10 +1,9 @@
 package com.pjc.study.array;
 
+import com.pjc.study.array1212.TargetNums;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ArrayTest {
 
@@ -66,5 +65,38 @@ public class ArrayTest {
 //        System.arraycopy(arr2,arr2.length-3,arr1,0,4);
         System.arraycopy(arr2,arr2.length-3,arr1,0,3);
         System.out.println(Arrays.toString(arr1));
+    }
+
+    @Test
+    public void testFill() {
+        Integer []arr = new Integer[10];
+        //给所有的位置填值
+        Arrays.fill(arr,5);
+        //把中间两个参数的位置的数赋值为3，前闭后开
+        Arrays.fill(arr,arr.length-3,arr.length,3);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    @Test
+    public void testArratSort() {
+
+//        Integer [] arr = new Integer[100];
+//        Arrays.asList(arr).forEach(value ->{
+//             value = (int)(Math.random()*100)+1 ;
+//        });
+
+//        for (int i = 0;i<arr.length;i++){
+//            arr[i] = (int)(Math.random()*100)+1 ;
+//        }
+        //这样可以排序，new出来的为什么不行啊
+        Integer []arr = {6,3,7,8,3,6,3,7,8,};
+        Arrays.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+    @Test
+    public void testTarget() {
+        System.out.println(Arrays.toString(TargetNums.targerNums(16)) );
     }
 }
