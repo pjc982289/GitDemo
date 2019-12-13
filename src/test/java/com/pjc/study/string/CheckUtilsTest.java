@@ -1,10 +1,8 @@
 package com.pjc.study.string;
 
-import com.pjc.study.string1210.Student;
 import com.pjc.study.string1210.utils.CheckUtils;
 import org.testng.annotations.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,15 +16,19 @@ public class CheckUtilsTest {
 
     @Test
     public void testObject(){
-        Student stu1 = new Student("pjc",18,"男");
-        Student stu2 = new Student("哈哈",null,"女");
-        Student stu3 = new Student("asd",17,"男");
-        List<Student> stu = new ArrayList<>();
-        stu.add(stu1);
-        stu.add(stu2);
-        stu.add(stu3);
-//        Student []stu = new Student[]{stu1,stu2,stu3};
-        System.out.println(CheckUtils.isEmpty(stu));
+
+        List<String> stu = new ArrayList<>();
+        stu.add("zxc");
+        stu.add("qwe");
+        stu.add(null);
+
+        List<Integer> stu2 = new ArrayList<>();
+        stu2.add(1);
+        stu2.add(2);
+        stu2.add(3);
+
+        System.out.println(CheckUtils.isEmpty(stu)+"**");
+        System.out.println(CheckUtils.isEmpty(stu2));
     }
 
     @Test

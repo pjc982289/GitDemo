@@ -1,8 +1,5 @@
 package com.pjc.study.string1210.utils;
 
-import com.pjc.study.string1210.Student;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class CheckUtils {
@@ -20,18 +17,16 @@ public class CheckUtils {
     }
 
     /*判断引用类型数组是否为空，为空或null返回true，否则返回false*/
-    public static  boolean isEmpty(List<Student> arr){
+    public static <T> boolean isEmpty(List<T> arr){
         for (int i = 0;i<arr.size();i++){
-            String name = arr.get(i).getName();
-            Integer age = arr.get(i).getAge();
-            String gender = arr.get(i).getGender();
-
-            if((name == null || name.equals("")) || (age==null || age.equals("")) || (gender==null || gender.equals(""))){
-                return false;
+            if(arr.get(i) == null || arr.contains("")){
+                return true;
             }
         }
-        return true;
+        return false;
     }
+
+
 
     /*判断字符串是否相等，相等返回true，否则返回false。其中一个是null时返回false*/
     public static boolean equals(String str1,String str2){
