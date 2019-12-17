@@ -1,6 +1,7 @@
 package com.pjc.study.array;
 
 import com.pjc.study.array1212.TargetNums;
+import com.pjc.study.array1212.utils.SortNums;
 import org.testng.annotations.Test;
 
 import java.util.*;
@@ -97,6 +98,12 @@ public class ArrayTest {
 
     @Test
     public void testTarget() {
-        System.out.println(Arrays.toString(TargetNums.targerNums(16)) );
+        System.out.println(Arrays.toString(TargetNums.targerNums(1)) );
+    }
+
+    @Test
+    public void testSort(){
+        int [] arr = {4,5,1,7,9};
+        System.out.println(Arrays.toString(SortNums.sortNums(arr)));
     }
 }
