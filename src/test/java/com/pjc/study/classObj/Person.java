@@ -6,6 +6,8 @@ package com.pjc.study.classObj;
  * @author: pjc
  * @create: 2019-12-18 08:12
  **/
+/*java类主要由7部分组成：包定义;包导入;域（成员变量）：实例变量、类变量;
+    方法、构造方法、内部类、代码块*/
 public class Person {
     //实例变量，域变量
     private String name;

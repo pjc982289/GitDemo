@@ -27,6 +27,8 @@ public class ChangeTest {
         System.out.println(sb);
     }
 
+    /*一个方法不能修改一个基本数据类型的参数，
+        也不能修改引用类型参数的指向，但是却可以修改引用类型参数指向的对象的值*/
     @Test
     public void changeNumsTest(){
 //        int num = 30;
