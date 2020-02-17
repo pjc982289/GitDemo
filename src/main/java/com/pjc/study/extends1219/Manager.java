@@ -32,10 +32,16 @@ public class Manager extends Employee {
     }
 
     public Integer getBonus() {
+        super.setSalary(1000);
         return bonus;
     }
     public void setBonus(Integer bonus) {
         this.bonus = bonus;
+    }
+
+    @Override
+    public Integer getSalary() {
+        return super.getSalary() + bonus;
     }
 
     @Override

@@ -22,5 +22,12 @@
             <version>7.0.0</version>
             <scope>test</scope>
         </dependency>
+
+<!--        cglib依赖，spring-core中有-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.2.RELEASE</version>
+        </dependency>
     </dependencies>
 </project>

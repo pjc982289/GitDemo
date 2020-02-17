@@ -3,6 +3,7 @@ package com.pjc.study.extends1219;
 import org.testng.annotations.Test;
 import sun.plugin2.message.Message;
 
+import javax.annotation.Resource;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -74,6 +75,16 @@ public class ExtendsTest {
 
         //错误，不能实例化抽象类
 //        Person p3 = new Person();
+    }
+
+    @Test
+    public void test1(){
+        Manager m = new Manager();
+//        Employee em = new Employee();
+//        em.setSalary(100);
+//        m.setBonus(10);
+        System.out.println(m.toString());
+        System.out.println(m.getSalary());
     }
 }
 
